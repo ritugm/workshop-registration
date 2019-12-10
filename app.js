@@ -67,9 +67,9 @@ quizdb.insert(doc,function(err,body,header){
     }
     else{
         res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<center><h2>Thank you for taking the quiz!</h2><center>');
-    res.write('<center><h3>You have scored '+quizscore+'!</h3><center>');
-    res.write('<center><h3>You will find details of the Digital Developer Conference : AI & Cloud in your email soon.!</h3><center>');
+    res.write('<center><h2>Thank you </h2><center>');
+    //res.write('<center><h3>You have scored '+quizscore+'!</h3><center>');
+    res.write('<center><h3>You will find the details of the Technical workshop in your email soon.!</h3><center>');
 
     res.end();
     }
