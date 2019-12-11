@@ -53,6 +53,7 @@ app.post('/quizsubmission', function(req,res){
     var doc={
         _id:req.headers.host + req.url,
         Full_name: req.body.quiz_1,
+        Current_Technology: req.body.quiz_2,
         Technology: req.body.quiz_3,
         time: new Date().toISOString(),
         email: req.body.cloudemail,
